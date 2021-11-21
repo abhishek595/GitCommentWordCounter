@@ -42,7 +42,7 @@ namespace GitCommitWordCounter
                 //Get data from the GitHub Api
                 var commentList = GetMessageList(token, owner, repo);
 
-                // store the data in the binary tree
+                // store the data in the binary search tree
                 StoreWord(commentList);
 
                 //merge the data to the list from the Tree
